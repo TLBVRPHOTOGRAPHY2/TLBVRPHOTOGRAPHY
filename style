@@ -1,0 +1,71 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+section#galerie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#galerie .categorie {
+    flex: 1 1 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Styles pour redimensionner l'image */
+section#galerie .categorie img {
+    max-width: 50%; /* L'image ne dépassera pas la largeur de son conteneur */
+    height: auto;   /* Maintient le ratio d'aspect de l'image */
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Optionnel: Styles supplémentaires pour différentes tailles d'écran */
+@media (max-width: 768px) {
+    section#galerie .categorie {
+        flex: 1 1 100%; /* Les catégories prendront toute la largeur de l'écran */
+    }
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
